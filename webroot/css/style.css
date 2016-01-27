@@ -1,0 +1,390 @@
+/**
+ * General elements
+ */
+body {
+  color: #333;
+  font-family: Verdana, sans-serif;
+}
+
+html {
+    overflow-y: scroll;
+    /* background-image: url(../img/stagebackground.jpg); */
+    background-color: #6D0000;
+}
+
+body {
+    margin: 8px auto;
+    padding: 8px;
+    width: 980px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+p {
+    font-family: 'Verdana', sans-serif;
+    margin-top: 1px;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol, figcaption {
+    margin: 1px;
+    font-family: 'Verdana', sans-serif;
+}
+
+/**
+* The logo in the header
+*/
+.logo {
+	float: left;
+}
+
+/**
+ * Textlänkar
+ */
+a {
+    color: #000000;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: underline;
+}
+
+/**
+ * Searchfält
+ */
+
+textarea {
+	width: 600px;
+	height: 150px;
+}
+
+/**
+ * Knappar
+ * 
+ */
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Verdana;
+  color: #fff;
+  font-size: 15px;
+  background: #6D0000;
+  padding: 9px 20px 10px 20px;
+  text-decoration: none;
+  width: 150px;
+}
+
+.btn a {
+	color: #fff
+}
+
+.btn:hover {
+  background: #A37777;
+  text-decoration: none;
+}
+
+ /* Form wrapper styling */
+.search-wrapper {
+float: left;
+width: 360px;
+margin: 40px auto 20px 140px;;
+box-shadow: 0 1px 1px rgba(0, 0, 0, .4) inset, 0 1px 0 rgba(255, 255, 255, .2);
+}
+ 
+/* Form text input */
+ 
+.search-wrapper input {
+width: 278px;
+height: 20px;
+padding: 10px 5px;
+float: left;
+font: bold 15px 'Verdana';
+border: 0;
+background: #EEE;
+border-radius: 3px 0 0 3px;
+}
+ 
+.search-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+ 
+.search-wrapper input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+ 
+.search-wrapper input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+ 
+.search-wrapper input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}    
+ 
+/* Form submit button */
+.search-wrapper button {
+overflow: visible;
+position: relative;
+float: right;
+border: 0;
+padding: 0;
+cursor: pointer;
+height: 40px;
+width: 72px;
+font: bold 15px/40px 'Verdana';
+color: white;
+text-transform: uppercase;
+background: #A37777;
+border-radius: 0 3px 3px 0;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+}
+
+.search-wrapper button:hover{     
+    background: #e54040;
+}   
+   
+.search-wrapper button:active,
+.search-wrapper button:focus{   
+    background: #c42f2f;
+    outline: 0;   
+}
+ 
+.search-wrapper button:before { /* left arrow */
+    /**content: '';**/
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #d83c3c transparent;
+    top: 12px;
+    left: -6px;
+}
+ 
+.search-wrapper button:hover:before{
+    border-right-color: #e54040;
+}
+ 
+.search-wrapper button:focus:before,
+.search-wrapper button:active:before{
+        border-right-color: #c42f2f;
+}      
+ 
+.search-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}    
+
+/**
+ * för att skapa en responsiv sida
+ */
+@media (max-width: 980px) {
+body {
+    width: auto;
+	}
+}
+
+/**
+ * Layout of the main page elements 
+ */
+.wrapper {
+  margin: 0 auto;
+  width: 980px; 
+  /**padding: 10px;**/
+}
+
+/**
+ * Layout for header
+ */
+.header {
+  position: relative;
+  height: 100px;
+  background-color: #6D0000;
+}
+
+/**
+.sitetitle {
+  position: absolute;
+  top: 6px;
+  left: 130px;
+  font-size: 48px;
+}
+**/
+.siteslogan {
+  position: absolute;
+  top: 40px;
+  left: 730px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+/**
+ * Layout for main
+ */
+.main {
+  min-height: 30em;
+}
+
+/**
+ * Layout for footer
+ */
+.footer {
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
+.sitefooter {
+  color: #666;
+}
+
+/**
+ * Navigation bar
+ * Den tidigare blå färgen #1D4060
+ */
+
+.navbar {
+    display:block;
+    margin:0;
+    padding:15px;
+    background:#6D0000;
+    border:0;
+    border-bottom:1px solid #6D0000;
+}
+
+.navbar a {
+    color:#FFFFFF;
+    font:bold 12px Verdana;
+    padding:15px;
+    text-decoration:none;
+}
+
+.navbar a:hover {
+    color:#FFFFFF;
+    background:#A37777}
+
+.navbar a:active {
+    color:#FFFFFF;
+    background:#A37777;
+}
+
+/**
+ * Filmtabellen
+ */
+
+table {
+    width: 100%;
+}
+
+.orderby a {
+  text-decoration: none;
+  color: black;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+	/*background-color: #A37777;*/
+}
+
+/**
+ * Nya filmer på förstasidan
+ */
+.blogsonfirstpage  {
+	width: 45%;
+	border: 0.5px solid grey;
+	margin: 10px;
+}
+
+.newmoviesonfirstpage {
+    column-width: 70px;
+    border: 0.5px solid grey;
+    border-collapse: collapse;
+    margin: 10px;
+    position: absolute;
+    left: 763px;
+    top: 750px;
+    
+}
+
+table.newmoviesonfirstpage {
+	width: 400px;
+	border-collapse: collapse;
+}
+
+.competition {
+	margin: 10px;
+	width: 400px;
+	float: right;
+	position: absolute;
+	right: 400px;
+	top: 430px;
+	border: 0.5px solid grey;
+}
+
+h2.centertitle {
+	text-align: center;
+}
+
+img.centerimage {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**
+* The most popular movie and the last rented movie - on the first page
+*/
+.mostpopularmovieandlastrentedmovie {
+	float: left;
+    column-width: 70px;
+    border: 0.5px solid grey;
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+table.mostpopularmovieandlastrentedmovie {
+	width: 45%;
+	border-collapse: collapse;
+}
+
+tr.mostpopularmovieandlastrentedmovie {
+	text-align: center;
+}
+
+h3.centertitle {
+	text-align: center;
+}
+
+img.centerimage {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

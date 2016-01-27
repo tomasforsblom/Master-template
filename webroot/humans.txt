@@ -1,0 +1,1 @@
+Master is a PHP-boilerplate/framework for small websites. Master was built by Tomas Forsblom (tomasf@hotmail.com)
